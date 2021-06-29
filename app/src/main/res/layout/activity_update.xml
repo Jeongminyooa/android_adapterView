@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/hsbombaram_thin"
+        android:gravity="center_horizontal"
+        android:text="똑디어트 기록 변경"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/customBlue"
+                android:fontFamily="@font/elice_regular"
+                android:gravity="center"
+                android:text="사진을 클릭하면 크게 볼 수 있습니다!" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/updateCimg"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#00FFFFFF"
+                android:src="@mipmap/addsample"></de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/elice_regular"
+                android:text="성별" />
+
+            <RadioGroup
+                android:id="@+id/updateGroupSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/updateWoman"
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/elice_regular"
+                    android:text="여자"
+                    app:buttonTint="#3F51B5" />
+
+                <RadioButton
+                    android:id="@+id/updateMan"
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/elice_regular"
+                    android:text="남자"
+                    app:buttonTint="#3F51B5" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/elice_regular"
+                android:text="키" />
+
+            <EditText
+                android:id="@+id/updateHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="#DAEDF6"
+                android:ems="10"
+                android:fontFamily="@font/elice_regular"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/elice_regular"
+                android:text="체중" />
+
+            <EditText
+                android:id="@+id/updateWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="#DAEDF6"
+                android:ems="10"
+                android:fontFamily="@font/elice_regular"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/elice_regular"
+                android:text="나이" />
+
+            <EditText
+                android:id="@+id/updateAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="#DAEDF6"
+                android:ems="10"
+                android:fontFamily="@font/elice_regular"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/elice_regular"
+                android:text="기록 날짜" />
+
+            <TextView
+                android:id="@+id/updateDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DAEDF6"
+                android:fontFamily="@font/elice_regular"
+                android:textSize="16sp" />
+
+            <DatePicker
+                android:id="@+id/updateDatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"></DatePicker>
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/elice_regular"
+                android:text="어떤 운동을 했나요?" />
+
+            <RadioGroup
+                android:id="@+id/updateExercise"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/addRadio1"
+                    android:layout_width="match_parent"
+                    android:layout_height="36sp"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/elice_regular"
+                    android:text="좌식 생활"
+                    android:textIsSelectable="false"
+                    app:buttonTint="#3F51B5" />
+
+                <RadioButton
+                    android:id="@+id/addRadio2"
+                    android:layout_width="match_parent"
+                    android:layout_height="36sp"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/elice_regular"
+                    android:text="보통 강도 운동"
+                    app:buttonTint="#3F51B5" />
+
+                <RadioButton
+                    android:id="@+id/addRadio3"
+                    android:layout_width="match_parent"
+                    android:layout_height="36sp"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/elice_regular"
+                    android:text="땀날 정도 운동"
+                    app:buttonTint="#3F51B5" />
+
+                <RadioButton
+                    android:id="@+id/addRadio4"
+                    android:layout_width="match_parent"
+                    android:layout_height="36sp"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/elice_regular"
+                    android:text="적극적인 운동"
+                    app:buttonTint="#3F51B5" />
+
+                <RadioButton
+                    android:id="@+id/addRadio5"
+                    android:layout_width="match_parent"
+                    android:layout_height="36sp"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/elice_regular"
+                    android:text="운동 선수 훈련 강도"
+                    app:buttonTint="#3F51B5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/elice_regular"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <Button
+                        android:id="@+id/updateBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/elice_regular"
+                        android:onClick="onClick"
+                        android:text="수정"
+                        app:backgroundTint="#3F51B5" />
+
+                    <Button
+                        android:id="@+id/updateCancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/elice_regular"
+                        android:onClick="onClick"
+                        android:text="취소"
+                        app:backgroundTint="#3F51B5" />
+                </LinearLayout>
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DAEDF6"
+            android:fontFamily="@font/hsbombaram_thin"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="똑디어트 개발자 소개"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="269dp"
+            android:layout_height="305dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/yoojeongmin"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DAEDF6"
+            android:fontFamily="@font/elice_regular"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="20190980 유정민"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/elice_regular"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="모바일 소프트웨어 01분반" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#DAEDF6"
+                    android:fontFamily="@font/elice_regular"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="1학기동안 모바일 소프트웨어 과목을 수강하면서 간단한 앱 프로그래밍을 배울 수 있었습니다.\n내용도 재미있었고 실습 과제도 수월하게 할 수 있었던 것은 모두 교수님의 수업 덕분입니다.\n1학기동안 좋은 수업 제공해주셔서 정말 감사드립니다. \n양갱이에게도 압도적 감사 인사 올립니다."
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/yanggang" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

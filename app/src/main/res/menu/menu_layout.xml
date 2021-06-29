@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemAdd"
+        android:title="운동 기록 추가" />
+    <item
+        android:id="@+id/itemSearch"
+        android:title="날짜 검색" />
+    <item android:title="운동 영상 추천">
+        <menu>
+            <item
+                android:id="@+id/youtube1"
+                android:onClick="onItemClick"
+                android:title="상체 운동 동영상" />
+            <item
+                android:id="@+id/youtube2"
+                android:onClick="onItemClick"
+                android:title="하체 운동 동영상" />
+            <item
+                android:id="@+id/youtube3"
+                android:onClick="onItemClick"
+                android:title="복근 운동 동영상" />
+            <item
+                android:id="@+id/youtube4"
+                android:onClick="onItemClick"
+                android:title="등 운동 동영상" />
+            <item
+                android:id="@+id/youtube5"
+                android:onClick="onItemClick"
+                android:title="전신 운동 동영상" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/itemIntroduce"
+        android:title="개발자 소개" />
+    <item
+        android:id="@+id/itemFinish"
+        android:title="앱 종료" ></item>
+</menu>
